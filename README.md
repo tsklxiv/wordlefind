@@ -29,7 +29,7 @@ You should, by now, have a prompt in the terminal. Press <kbd>Enter</kbd> and yo
 
 # Credits
 
-This project uses [this English dictionary](https://github.com/dwyl/english-words/) for finding words. They contain words that doesn't exist in the [Wordle game]() that I regularly played, so, pay attention!
+This project uses [this English dictionary](https://github.com/dwyl/english-words/) for finding words. They contain words that doesn't exist in the [Wordle game](https://wordlegame.org) that I regularly played, so, pay attention!
 
 Thanks to [`typer`](https://typer.tiangolo.com) for the cool text coloring and formatting, though using it is a bit overkill.
 
