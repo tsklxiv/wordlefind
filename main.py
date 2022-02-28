@@ -1,7 +1,5 @@
 from re import search
 from typer import secho
-from prompt_toolkit import PromptSession
-from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
 
 # Open the words file, read the contents, and filter out words
 # that are not 5 letters long.
@@ -12,14 +10,9 @@ def read_words():
 
 VALID_WORDS = read_words()
 
-session = PromptSession(
-    auto_suggest=AutoSuggestFromHistory(),
-    enable_history_search=True,
-)
-
 def main():
     while True:
-        inpt = session.prompt("> ")
+        inpt = input("> ")
         pattern = inpt.lower()
 
         matches = [word for word in VALID_WORDS if search(pattern, word) is not None]
